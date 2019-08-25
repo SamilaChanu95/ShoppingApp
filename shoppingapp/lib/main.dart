@@ -107,7 +107,7 @@ class ShoppingApp extends StatelessWidget {
                             SizedBox(width: 14.0),
                             Container(
                               alignment: Alignment.topLeft,
-                              height: 45.0,
+                              height: 50.0,
                               width: 50.0,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(25.0),
@@ -117,6 +117,9 @@ class ShoppingApp extends StatelessWidget {
                                   width: 2.0
 
                                   //images contain in images folder
+                                ),
+                                image: DecorationImage(
+                                  image: AssetImage('images/user.jpg'),
                                 )
                               ),
                             )
