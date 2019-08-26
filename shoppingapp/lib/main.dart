@@ -136,6 +136,19 @@ class ShoppingApp extends StatelessWidget {
                             height: 15.0
                             ),
                           ],
+                        ),
+                        SizedBox(
+                          height: 90.0
+                          ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 30.0),//padding ekata eft eke sita 15.0 ka durin
+                          child: Text(
+                            "Hi Customers..",
+                            style: TextStyle(
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.normal
+                            ),
+                          ),
                         )
                       ],
                     )
