@@ -115,18 +115,32 @@ class ShoppingApp extends StatelessWidget {
                                   color: Colors.white,
                                   style: BorderStyle.solid,
                                   width: 2.0
-
-                                  //images contain in images folder
                                 ),
                                 image: DecorationImage(
-                                  image: AssetImage('images/user.jpg'),
+                                  image: AssetImage('images/user.jpg'), //images contain in images folder
                                 )
                               ),
-                            )
+                            ),
+                            SizedBox(
+                              width: MediaQuery.of(context).size.width-120), // using mediaquery we can build responsive page item(Screen size ekat anuwa width eka wenas wena pages)
+                            Container(
+                              alignment: Alignment.topRight,
+                              child: IconButton(
+                                  icon: Icon(Icons.menu),
+                                  onPressed: (){},
+                                  color: Colors.lightGreen,
+                              iconSize: 28.0,
+                                   ),
+                            ),
+                            SizedBox(
+                            height: 15.0
+                            ),
                           ],
                         )
                       ],
                     )
+
+
 
                   ],
                 )
