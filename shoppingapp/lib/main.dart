@@ -138,7 +138,7 @@ class ShoppingApp extends StatelessWidget {
                           ],
                         ),
                         SizedBox(
-                          height: 90.0
+                          height: 20.0
                           ),
                         Padding(
                           padding: EdgeInsets.only(left: 30.0),//padding ekata eft eke sita 15.0 ka durin
@@ -146,8 +146,36 @@ class ShoppingApp extends StatelessWidget {
                             "Hi Customers..",
                             style: TextStyle(
                               fontSize: 25.0,
-                              fontWeight: FontWeight.normal
+                              fontWeight: FontWeight.bold
                             ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 25.0,
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 20.0,right: 20.0),
+                          child: Material(
+                            elevation: 5.0,
+                            borderRadius: BorderRadius.circular(25.0),
+                            child: TextFormField(
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                prefixIcon: Icon(
+                                  Icons.search,
+                                  color: Colors.purple,
+                                  size: 30.0
+                                ),
+                                contentPadding: EdgeInsets.only(left: 20.0,top: 15.0,bottom: 10.0), //padding eka  athulatha dewal add kirimata contentPadding use karai//EdgeInsets.only magin adhala padding eken depaththen location eka gani
+                                hintText: "Search",//placeholder
+                                hintStyle: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 20.0,
+                                  fontStyle: FontStyle.normal,
+                                  fontFamily: "Rock Salt"
+                                )
+                              ),
+                            )
                           ),
                         )
                       ],
