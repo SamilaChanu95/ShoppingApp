@@ -177,12 +177,76 @@ class ShoppingApp extends StatelessWidget {
                               ),
                             )
                           ),
+                        ),
+                        SizedBox(
+                          height: 10.0
                         )
                       ],
                     )
-
-
-
+                  ],
+                ),
+                SizedBox(
+                  height: 10.0
+                ),
+                Stack(
+                  children: <Widget>[
+                    SizedBox(height: 10.0),
+                    Material(
+                      elevation: 1.0,
+                      child: Container(
+                        height: 70.0,
+                        color: Colors.white
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,//item athara gap eka samanawa pawathwaa ganimata
+                        children: <Widget>[
+                          Container(
+                            height: 75.0,
+                            width: MediaQuery.of(context).size.width/5,
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  height: 50.0,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage('images/bag.jpg')
+                                    )
+                                  ),
+                                ),
+                                Text(
+                                  'Baby Bag',
+                                  style: TextStyle(
+                                    fontFamily: "Quicksand"
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 75.0,
+                            width: MediaQuery.of(context).size.width/5,
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  height: 50.0,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage('images/hat.jpg')
+                                      )
+                                  ),
+                                ),
+                                Text(
+                                  'Baby Hat',
+                                      style: TextStyle(
+                                        fontFamily: 'Quicksand'
+                                      ),
+                                )
+                              ],
+                            ),
+                          )
+                        ],
+                    )
                   ],
                 )
               ],
