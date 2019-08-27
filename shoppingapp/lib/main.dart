@@ -377,7 +377,56 @@ class ShoppingApp extends StatelessWidget {
                 ],
               ),
               SizedBox(
-
+                height: 5.0
+              ),
+              Container(
+                width: 170.0,
+                child: Text(
+                  'This is special deal',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 13.0
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 5.0
+              ),
+              Row(
+                children: <Widget>[
+                  SizedBox(
+                    width: 35.0
+                  ),
+                  Container( //for show the price
+                    height: 44.0,
+                    width: 50.0,
+                    color: Colors.black,
+                    child: Center(
+                      child: Text(
+                        '\$300',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container( //for show the 'Add to cart' button
+                    height: 44.0,
+                    width: 100.0,
+                    color: Colors.black,
+                    child: Center(
+                      child: Text(
+                        'Add to Cart',
+                        style: TextStyle(
+                          color: Colors.amber,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               )
             ],
           )
@@ -386,5 +435,5 @@ class ShoppingApp extends StatelessWidget {
     ),
   );
   }
- 
+
 
