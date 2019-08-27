@@ -203,7 +203,7 @@ class ShoppingApp extends StatelessWidget {
                         children: <Widget>[
                           Container(
                             height: 75.0,
-                            width: MediaQuery.of(context).size.width/5,
+                            width: MediaQuery.of(context).size.width/6,
                             child: Column(
                               children: <Widget>[
                                 Container(
@@ -241,6 +241,72 @@ class ShoppingApp extends StatelessWidget {
                                       style: TextStyle(
                                         fontFamily: 'Quicksand'
                                       ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 75.0,
+                            width: MediaQuery.of(context).size.width/5,
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  height: 50.0,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage('images/cart.jpg')
+                                    )
+                                  ),
+                                ),
+                                Text(
+                                  'Baby Cart',
+                                  style: TextStyle(
+                                    fontFamily: 'Quicksand'
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 75.0,
+                            width: MediaQuery.of(context).size.width/5,
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  height: 50.0,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage('images/cloths.jpg')
+                                    )
+                                  ),
+                                ),
+                                Text(
+                                  'Baby Flock',
+                                  style: TextStyle(
+                                    fontFamily: 'Quicksand'
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 75.0,
+                            width: MediaQuery.of(context).size.width/5,
+                            child: Column(
+                              children: <Widget>[
+                                Container(
+                                  height: 50.0,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage("images/items-shoes.jpg")
+                                    )
+                                  ),
+                                ),
+                                Text(
+                                  'Baby Shoe',
+                                  style: TextStyle(
+                                    fontFamily: 'Quicksand'
+                                  ),
                                 )
                               ],
                             ),
