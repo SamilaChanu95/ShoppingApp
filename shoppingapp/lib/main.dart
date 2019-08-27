@@ -316,7 +316,8 @@ class ShoppingApp extends StatelessWidget {
                   ],
                 )
               ],
-            )
+            ),
+            specialItemCard('Baby Cart','images/cart.jpg',false)
           ],
         )
       );
