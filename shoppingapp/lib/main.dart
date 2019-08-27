@@ -323,4 +323,68 @@ class ShoppingApp extends StatelessWidget {
    }
   }
 
+  //boolean using for if that is favourite then display with red color or special color
+  Widget specialItemCard(String title,String imagePath,bool isLoved){
+
+  return Padding(
+    padding: EdgeInsets.only(left: 15.0,right: 15.0,top: 15.0),
+    child: Container(
+      height: 140.0,
+      width: double.infinity,
+      color: Colors.white,
+      child: Row(
+        children: <Widget>[
+          Container(
+            width: 140.0,
+            height: 150.0,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(imagePath),
+                fit: BoxFit.cover
+              )
+            ),
+          ),
+          SizedBox(
+            width: 4.0
+          ),
+          Column(
+            children: <Widget>[
+              Row(
+                children: <Widget>[
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold
+                    ),
+                  ),
+                  SizedBox(
+                    width: 45.0
+                  ),
+                  Material(
+                    elevation: isLoved ? 0.0 : 2.0,//if that is favourite one then elevation is 0.0 else elevation is 2.0
+                    borderRadius: BorderRadius.circular(20.0),
+                    child: Container(
+                      height: 40.0,
+                      width: 40.0,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(18.0),
+                        color: isLoved ? Colors.grey.withOpacity(0.3):Colors.white
+                      ),
+                      child: isLoved ? Icon(Icons.favorite_border):Icon(Icons.favorite,color: Colors.red),
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+
+              )
+            ],
+          )
+        ],
+      ),
+    ),
+  );
+  }
+ 
 
